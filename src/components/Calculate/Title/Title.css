@@ -1,0 +1,20 @@
+.title-box {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  .title {
+    font-size: 3.6rem;
+    font-weight: 800;
+    color: white;
+    /* color: rgb(197, 119, 105); */
+  }
+  .title2 {
+    font-size: 3.6rem;
+    font-weight: 800;
+    color: white;
+    /* color: rgb(197, 119, 105); */
+    margin-top: -6px;
+  }
