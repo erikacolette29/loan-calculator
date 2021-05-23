@@ -32,6 +32,9 @@ const Calculate = () => {
     setMonthlyPayment(0);
   };
 
+
+
+
   return (
     <div className="body-container">
       <Title />
@@ -41,6 +44,8 @@ const Calculate = () => {
         <form onSubmit={calculate}>
           <div className="form-box">
             <div>
+         
+
               <label className="label">Loan Amount</label>
               <input
                 className="form-control"
