@@ -8,6 +8,7 @@ Website: https://loan-calculator-et.netlify.app/
 ### Wireframe
 
 ![wireframe]/(images/wireframe.png)
+
 ### Technologies
 
 * React.js
