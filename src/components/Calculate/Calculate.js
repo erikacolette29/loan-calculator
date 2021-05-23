@@ -41,7 +41,7 @@ const Calculate = () => {
         <form onSubmit={calculate}>
           <div className="form-box">
             <div>
-              <label className="label">loan amount</label>
+              <label className="label">Loan Amount</label>
               <input
                 className="form-control"
                 type="number"
@@ -53,7 +53,7 @@ const Calculate = () => {
             </div>
             <div>
               <div className="rate-box">
-                <label className="label">interest rate</label>
+                <label className="label">Interest Rate</label>
                 <label className="label">
                   <a
                     className="current-rates"
@@ -61,7 +61,7 @@ const Calculate = () => {
                     rel="noopener noreferrer"
                     href="https://www.nerdwallet.com/blog/mortgages/current-interest-rates/"
                   >
-                    current rates
+                    Current Rates
                   </a>
                 </label>
               </div>
@@ -75,7 +75,7 @@ const Calculate = () => {
               />
             </div>
             <div>
-              <label className="label">number of months</label>
+              <label className="label">Number Of Months</label>
               <input
                 className="form-control"
                 type="number"
