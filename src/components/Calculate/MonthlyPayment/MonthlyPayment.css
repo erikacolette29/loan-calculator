@@ -1,25 +1,27 @@
 .total-box {
   background-color: rgb(94, 174, 156);
   color: white;
-  padding: 2rem 3rem;
+  padding: 2rem 3rem 2rem 2rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-flow: column wrap;
   border-radius: 30px;
-  width: 400px;
+  width: 500px;
 }
 
 .label2 {
   font-size: 2rem;
 }
 .monthly-amount {
-  font-size: 3rem;
+  font-size: 2.2rem;
+
+ 
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .total-box {
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     align-items: center;
     border-radius: 30px 30px 0 0;
     width: auto;
@@ -30,6 +32,6 @@
     font-size: 1.3rem;
   }
   .monthly-amount {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }

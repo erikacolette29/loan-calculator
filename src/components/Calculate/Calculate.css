@@ -10,7 +10,7 @@
   background-color: rgb(94, 174, 156);
   display: flex;
   flex-flow: row wrap;
-
+  box-shadow: 10px 10px 11px rgb(157, 194, 186);
 }
 
 .form-box {
@@ -26,7 +26,7 @@
 
 .label {
   margin: 2rem 0 1rem;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   color: rgb(224, 134, 118);
 }
 
