@@ -1,9 +1,8 @@
-
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-      .button-box {
+  .button-box {
     margin: 2rem 0 1rem;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding: 0 1.5rem;
   }
@@ -23,26 +22,24 @@
     /* transition: transform 125ms;
   transform: translateY(3px); */
   }
-  .button:active{
-    color: white;  
+  .button:active {
+    color: white;
     border-color: none;
     border: none;
     outline: 0 !important;
   }
-  .button:visited{
-    color: white;  
+  .button:visited {
+    color: white;
     border-color: none;
     border: none;
     outline: 0 !important;
   }
-  .button:focus{
-    color: white;  
+  .button:focus {
+    color: white;
     border-color: none;
     border: none;
-    
-    
   }
-  .reset-button{
+  .reset-button {
     background-color: rgba(255, 255, 255, 0);
     color: rgb(224, 134, 118);
     border: none;
