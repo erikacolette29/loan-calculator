@@ -3,6 +3,7 @@ import "./Calculate.css";
 import Buttons from "./Buttons/Buttons";
 import Title from "./Title/Title";
 import MonthlyPayment from "./MonthlyPayment/MonthPayment";
+import Slider from './Silder/Slider'
 
 const Calculate = () => {
   const [loanAmount, setLoanAmount] = useState("");
@@ -41,6 +42,7 @@ const Calculate = () => {
         <form onSubmit={calculate}>
           <div className="form-box">
             <div>
+              <Slider values={loanAmount} onChanges={(e) => setLoanAmount(e.target.value)}/>
               <label className="label">Loan Amount</label>
               <input
                 className="form-control"
