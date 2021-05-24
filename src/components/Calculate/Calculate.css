@@ -40,7 +40,9 @@
 }
 .rate-box {
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
+  flex-flow: column wrap;
+
 }
 .current-rates {
   color: rgb(224, 134, 118);

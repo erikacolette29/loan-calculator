@@ -4,13 +4,15 @@ import Buttons from "./Buttons/Buttons";
 import Title from "./Title/Title";
 import MonthlyPayment from "./MonthlyPayment/MonthPayment";
 import SliderOne from './Silder/SliderOne'
+import SliderTwo from '../SilderTwo/SliderTwo'
 
 const Calculate = () => {
   const [loanAmount, setLoanAmount] = useState("0");
-  const [interestRate, setInterestRate] = useState("");
+  const [interestRate, setInterestRate] = useState("0");
   const [numMonths, setNumMonth] = useState("");
   const [monthlyPayment, setMonthlyPayment] = useState(0);
   const [sliderOne, setSliderOne]=useState(loanAmount);
+  const [sliderTwo, setSliderTwo]=useState(interestRate);
 
   const calculate = (e) => {
     e.preventDefault();
@@ -33,6 +35,7 @@ const Calculate = () => {
     setNumMonth("");
     setMonthlyPayment(0);
    setSliderOne("0");
+   setSliderTwo("0")
   };
 
   return (
@@ -44,40 +47,13 @@ const Calculate = () => {
         <form onSubmit={calculate}>
           <div className="form-box">
             <div>
-             
-             
               <SliderOne sliderOne={sliderOne} setSliderOne={setSliderOne}values={loanAmount} setLoanAmount={setLoanAmount}/>
-              {/* <input
-                className="form-control"
-                type="number"
-                placeholder="$0"
-                aria-label="default input example"
-                value={loanAmount}
-                onChange={(e) => setLoanAmount(e.target.value)}
-              /> */}
             </div>
             <div>
               <div className="rate-box">
-                <label className="label">Interest Rate</label>
-                <label className="label">
-                  <a
-                    className="current-rates"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://www.nerdwallet.com/blog/mortgages/current-interest-rates/"
-                  >
-                    Current Rates
-                  </a>
-                </label>
+               <SliderTwo sliderTwo={sliderTwo} setSliderTwo={setSliderTwo} setInterestRate={setInterestRate}/>
+                
               </div>
-              <input
-                className="form-control"
-                type="number"
-                placeholder="%"
-                aria-label="default input example"
-                value={interestRate}
-                onChange={(e) => setInterestRate(e.target.value)}
-              />
             </div>
             <div>
               <label className="label">Number Of Months</label>
