@@ -13,15 +13,15 @@ const Calculate = () => {
   const calculate = (e) => {
     e.preventDefault();
     const formValid =
-      +loanAmount >= 0 &&
-      0 <= +interestRate &&
-      +interestRate <= 100 &&
-      +numMonths > 0;
+      loanAmount >= 0 &&
+      0 <= interestRate &&
+      interestRate <= 100 &&
+      numMonths > 0;
     if (!formValid) {
       return;
     }
     setMonthlyPayment(
-      Math.round((+loanAmount * (1 + +interestRate / 100)) / +numMonths)
+      Math.round((loanAmount * (1 + interestRate / 100)) / numMonths)
     );
   };
 
