@@ -13,6 +13,10 @@ export default function Slider({values, setLoanAmount}) {
     })
   
     return (
+      <>
+      <div className="buble" > 
+        ${value}
+        </div>
       <div className="slider-parent">
         <input className="form-range" type="range" min="1" max="50000" value={value}
            onChange={({ target: { value: radius } }) => {
@@ -20,9 +24,8 @@ export default function Slider({values, setLoanAmount}) {
                       setValue(radius);
                     }}
         />
-        <div className="buble" > 
-        ${value}
-        </div>
+        
       </div>
+      </>
     );
   }

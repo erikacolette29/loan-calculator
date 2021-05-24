@@ -9,9 +9,20 @@
   } 
   
   .buble{
-   margin: 0 1rem;
    color: rgb(224, 134, 118);
    font-size: 2rem;
+  }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .buble{
+    
+      font-size: 1.2rem;
+    
+     }
+
+     .form-range{
+       width: 80% !important;
+     }
+
   }
 
   .form-range{
