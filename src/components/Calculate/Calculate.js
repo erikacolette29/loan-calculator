@@ -72,15 +72,6 @@ const Calculate = () => {
               setSliderThree={setSliderThree}
               setNumMonth={setNumMonth}
               />
-             
-              {/* <input
-                className="form-control"
-                type="number"
-                placeholder="0"
-                aria-label="default input example"
-                value={numMonths}
-                onChange={(e) => setNumMonth(e.target.value)}
-              /> */}
             </div>
 
             <Buttons reset={onReset} />

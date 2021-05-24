@@ -33,7 +33,7 @@ export default function SliderOne({ sliderTwo, setSliderTwo, values, setInterest
                 </label>
         </div>
       <div className="slider-parent">
-        <input className="form-range" type="range" min="0" max="10" value={sliderTwo}
+        <input className="form-range" type="range" min="0" max="10" step="0.25" value={sliderTwo}
            onChange={({ target: { value: radius } }) => {
              setInterestRate(radius)
                       setSliderTwo(radius);
