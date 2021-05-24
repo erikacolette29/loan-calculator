@@ -10,7 +10,7 @@ const Calculate = () => {
   const [interestRate, setInterestRate] = useState("");
   const [numMonths, setNumMonth] = useState("");
   const [monthlyPayment, setMonthlyPayment] = useState(0);
-  const [slider1, setSliderOne]=useState(loanAmount);
+  const [sliderOne, setSliderOne]=useState(loanAmount);
 
   const calculate = (e) => {
     e.preventDefault();
@@ -46,7 +46,7 @@ const Calculate = () => {
             <div>
              
              
-              <SliderOne slider1={slider1} setSliderOne={setSliderOne}values={loanAmount} setLoanAmount={setLoanAmount}/>
+              <SliderOne sliderOne={sliderOne} setSliderOne={setSliderOne}values={loanAmount} setLoanAmount={setLoanAmount}/>
               {/* <input
                 className="form-control"
                 type="number"
