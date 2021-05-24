@@ -10,7 +10,7 @@
   
   .buble{
     margin: 1rem 1rem 0;
-   color: rgb(224, 134, 118);
+   color: #5eae9c;
    font-size: 1.5rem;
   }
   .loan-amount-box{
@@ -18,22 +18,33 @@
     justify-content: flex-start;
     align-items: center;
   }
+
+  @media only screen and (min-width: 480px) and (max-width: 1300px) {
+    .buble{
+      margin: 0 2rem ;
+      font-size: 2rem !important;
+    
+     }
+     .form-range{
+      width: 100% !important;
+    }
+  }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
    
     .buble{
-      margin: 0 1rem;
-      font-size: 1rem;
+      margin: 0 2rem ;
+      font-size: 1rem !important;
     
      }
 
      .form-range{
-       width: 80% !important;
+       width: 100% !important;
      }
 
   }
 
   .form-range{
-    width: 70%;
+    width: 100%;
     margin: 3.75px 0;
     background-color: transparent;
     -webkit-appearance: none;
