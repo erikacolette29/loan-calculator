@@ -14,8 +14,11 @@ export default function Slider({values, setLoanAmount}) {
   
     return (
       <>
+      <div className="loan-amount-box">
+      <label className="label">Loan Amount</label>
       <div className="buble" > 
         ${value}
+        </div>
         </div>
       <div className="slider-parent">
         <input className="form-range" type="range" min="1" max="50000" value={value}

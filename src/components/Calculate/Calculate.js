@@ -43,7 +43,7 @@ const Calculate = () => {
           <div className="form-box">
             <div>
              
-              <label className="label">Loan Amount</label>
+             
               <Slider values={loanAmount} setLoanAmount={setLoanAmount}/>
               {/* <input
                 className="form-control"

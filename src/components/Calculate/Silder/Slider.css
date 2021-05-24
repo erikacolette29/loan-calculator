@@ -9,13 +9,20 @@
   } 
   
   .buble{
+    margin: 1rem 1rem 0;
    color: rgb(224, 134, 118);
-   font-size: 2rem;
+   font-size: 1.5rem;
+  }
+  .loan-amount-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
+   
     .buble{
-    
-      font-size: 1.2rem;
+      margin: 0 1rem;
+      font-size: 1rem;
     
      }
 
