@@ -1,9 +1,9 @@
 import React,{useState, useEffect} from 'react';
 import "./Slider.css"
 
-export default function Slider({values, onChanges}) {
+export default function Slider({values, setLoanAmount}) {
     
-    const [value,onChange]=useState(values);
+    const [value, setValue]=useState(values);
   
     useEffect(()=>{
         const ele = document.querySelector('.buble');
@@ -14,9 +14,10 @@ export default function Slider({values, onChanges}) {
   
     return (
       <div className="slider-parent">
-        <input type="range" min="1" max="1000" value={value}
+        <input className="form-range" type="range" min="1" max="50000" value={value}
            onChange={({ target: { value: radius } }) => {
-                      onChange(radius);
+             setLoanAmount(radius)
+                      setValue(radius);
                     }}
         />
         <div className="buble" > 

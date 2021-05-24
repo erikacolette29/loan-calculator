@@ -6,7 +6,7 @@ import MonthlyPayment from "./MonthlyPayment/MonthPayment";
 import Slider from './Silder/Slider'
 
 const Calculate = () => {
-  const [loanAmount, setLoanAmount] = useState("");
+  const [loanAmount, setLoanAmount] = useState("0");
   const [interestRate, setInterestRate] = useState("");
   const [numMonths, setNumMonth] = useState("");
   const [monthlyPayment, setMonthlyPayment] = useState(0);
@@ -42,16 +42,17 @@ const Calculate = () => {
         <form onSubmit={calculate}>
           <div className="form-box">
             <div>
-              <Slider values={loanAmount} onChanges={(e) => setLoanAmount(e.target.value)}/>
+             
               <label className="label">Loan Amount</label>
-              <input
+              <Slider values={loanAmount} setLoanAmount={setLoanAmount}/>
+              {/* <input
                 className="form-control"
                 type="number"
                 placeholder="$0"
                 aria-label="default input example"
                 value={loanAmount}
                 onChange={(e) => setLoanAmount(e.target.value)}
-              />
+              /> */}
             </div>
             <div>
               <div className="rate-box">
