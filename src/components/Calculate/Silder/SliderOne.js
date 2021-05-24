@@ -1,14 +1,15 @@
 import React,{useState, useEffect} from 'react';
-import "./Slider.css"
+import "./SliderOne.css"
 
-export default function Slider({values, setLoanAmount}) {
+export default function SliderOne({ slider1, setSliderOne, values, setLoanAmount}) {
     
-    const [value, setValue]=useState(values);
+    // const [slider, setSlider1]=useState(values);
   
+
     useEffect(()=>{
         const ele = document.querySelector('.buble');
       if (ele) {
-        ele.style.left = `${Number(value / 4)}px`;
+        ele.style.left = `${Number(slider1 / 4)}px`;
       }
     })
   
@@ -17,14 +18,14 @@ export default function Slider({values, setLoanAmount}) {
       <div className="loan-amount-box">
       <label className="label">Loan Amount</label>
       <div className="buble" > 
-        ${value}
+        ${slider1}
         </div>
         </div>
       <div className="slider-parent">
-        <input className="form-range" type="range" min="1" max="50000" value={value}
+        <input className="form-range" type="range" min="1" max="100000" value={slider1}
            onChange={({ target: { value: radius } }) => {
              setLoanAmount(radius)
-                      setValue(radius);
+                      setSliderOne(radius);
                     }}
         />
         

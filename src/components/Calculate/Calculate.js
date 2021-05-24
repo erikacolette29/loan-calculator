@@ -3,13 +3,14 @@ import "./Calculate.css";
 import Buttons from "./Buttons/Buttons";
 import Title from "./Title/Title";
 import MonthlyPayment from "./MonthlyPayment/MonthPayment";
-import Slider from './Silder/Slider'
+import SliderOne from './Silder/SliderOne'
 
 const Calculate = () => {
   const [loanAmount, setLoanAmount] = useState("0");
   const [interestRate, setInterestRate] = useState("");
   const [numMonths, setNumMonth] = useState("");
   const [monthlyPayment, setMonthlyPayment] = useState(0);
+  const [slider1, setSliderOne]=useState(loanAmount);
 
   const calculate = (e) => {
     e.preventDefault();
@@ -31,6 +32,7 @@ const Calculate = () => {
     setInterestRate("");
     setNumMonth("");
     setMonthlyPayment(0);
+   setSliderOne("0");
   };
 
   return (
@@ -44,7 +46,7 @@ const Calculate = () => {
             <div>
              
              
-              <Slider values={loanAmount} setLoanAmount={setLoanAmount}/>
+              <SliderOne slider1={slider1} setSliderOne={setSliderOne}values={loanAmount} setLoanAmount={setLoanAmount}/>
               {/* <input
                 className="form-control"
                 type="number"
