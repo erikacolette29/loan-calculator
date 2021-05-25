@@ -7,7 +7,7 @@ Website: https://loan-calculator-et.netlify.app/
 
 ### Wireframe
 
-![wireframe](public/images/wireframe.jpg)
+![wireframe](public/images/wireframes.png)
 
 ### Technologies
 
