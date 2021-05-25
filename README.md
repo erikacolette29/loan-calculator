@@ -22,6 +22,4 @@ Website: https://loan-calculator-et.netlify.app/
 * Bootstrap
 
 
-### Future Enhancements
 
-* Range Slider
