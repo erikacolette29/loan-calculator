@@ -20,23 +20,7 @@
   transition: transform 125ms;
   transform: translateY(3px);
 }
-.button:active {
-  color: white;
-  border-color: none;
-  border: none;
-  outline: 0 !important;
-}
-.button:visited {
-  color: white;
-  border-color: none;
-  border: none;
-  outline: 0 !important;
-}
-.button:focus {
-  color: white;
-  border-color: none;
-  border: none;
-}
+
 .reset-button {
   background-color: rgba(255, 255, 255, 0);
   color: rgb(224, 134, 118);

@@ -4,7 +4,7 @@ import Buttons from "./Buttons/Buttons";
 import Title from "./Title/Title";
 import MonthlyPayment from "./MonthlyPayment/MonthPayment";
 import SliderOne from "./Silder/SliderOne";
-import SliderTwo from "../SilderTwo/SliderTwo";
+import SliderTwo from "./SilderTwo/SliderTwo";
 import SliderThree from './SilderThree/SliderThree'
 
 const Calculate = () => {

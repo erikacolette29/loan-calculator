@@ -1,130 +1,113 @@
-.Slider {
-    font-family: sans-serif;
-    text-align: center;
+.buble {
+  margin: 1rem 1rem 0;
+  color: #5eae9c;
+  font-size: 1.5rem;
+}
+.loan-amount-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.form-range {
+  width: 100%;
+  margin: 3.75px 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+.form-range:focus {
+  outline: none;
+}
+.form-range:active {
+  outline: none;
+}
+.form-range[type="range"]::-webkit-slider-runnable-track {
+  background: rgba(184, 213, 211, 0.5);
+  border: 0;
+  border-radius: 25px;
+  width: 100%;
+  height: 12.5px;
+  cursor: pointer;
+}
+.form-range[type="range"]::-webkit-slider-thumb {
+  margin-top: -3.75px;
+  width: 21px;
+  height: 20px;
+  background: #5eae9c;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 26px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+.form-range[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #c8dedd;
+}
+.form-range[type="range"]::-moz-range-track {
+  background: rgba(184, 213, 211, 0.5);
+  border: 0;
+  border-radius: 25px;
+  width: 100%;
+  height: 12.5px;
+  cursor: pointer;
+}
+.form-range[type="range"]::-moz-range-thumb {
+  width: 21px;
+  height: 20px;
+  background: #5eae9c;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 26px;
+  cursor: pointer;
+}
+.form-range[type="range"]::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 6.45px 0;
+  color: transparent;
+  width: 100%;
+  height: 12.5px;
+  cursor: pointer;
+}
+.form-range[type="range"]::-ms-fill-lower {
+  background: #a8ccc9;
+  border: 0;
+  border-radius: 50px;
+}
+.form-range[type="range"]::-ms-fill-upper {
+  background: rgba(184, 213, 211, 0.5);
+  border: 0;
+  border-radius: 50px;
+}
+.form-range[type="range"]::-ms-thumb {
+  width: 21px;
+  height: 20px;
+  background: #5eae9c;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 26px;
+  cursor: pointer;
+  margin-top: 0px;
+}
+.form-range[type="range"]:focus::-ms-fill-lower {
+  background: rgba(184, 213, 211, 0.5);
+}
+.form-range[type="range"]:focus::-ms-fill-upper {
+  background: #c8dedd;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1300px) {
+  .buble {
+    margin: 0 2rem;
+    font-size: 2rem !important;
   }
-  .slider-parent{
-   display: flex;
-   justify-content: flex-start;
- align-items: center;
-  } 
-  
-  .buble{
-    margin: 1rem 1rem 0;
-   color: #5eae9c;
-   font-size: 1.5rem;
+  .form-range {
+    width: 100% !important;
   }
-  .loan-amount-box{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .buble {
+    margin: 0 2rem;
+    font-size: 1rem !important;
   }
 
-  @media only screen and (min-width: 480px) and (max-width: 1300px) {
-    .buble{
-      margin: 0 2rem ;
-      font-size: 2rem !important;
-    
-     }
-     .form-range{
-      width: 100% !important;
-    }
+  .form-range {
+    width: 100% !important;
   }
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
-   
-    .buble{
-      margin: 0 2rem ;
-      font-size: 1rem !important;
-    
-     }
-
-     .form-range{
-       width: 100% !important;
-     }
-
-  }
-
-  .form-range{
-    width: 100%;
-    margin: 3.75px 0;
-    background-color: transparent;
-    -webkit-appearance: none;
-  }
-  .form-range:focus{
-    outline: none;
-    
-  }
-  .form-range:active{
-    outline: none;
-  }
-  .form-range[type=range]::-webkit-slider-runnable-track {
-    background: rgba(184, 213, 211, 0.5);
-    border: 0;
-    border-radius: 25px;
-    width: 100%;
-    height: 12.5px;
-    cursor: pointer;
-  }
-  .form-range[type=range]::-webkit-slider-thumb {
-    margin-top: -3.75px;
-    width: 21px;
-    height: 20px;
-    background: #5eae9c;
-    border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 26px;
-    cursor: pointer;
-    -webkit-appearance: none;
-  }
-  .form-range[type=range]:focus::-webkit-slider-runnable-track {
-    background: #c8dedd;
-  }
-  .form-range[type=range]::-moz-range-track {
-    background: rgba(184, 213, 211, 0.5);
-    border: 0;
-    border-radius: 25px;
-    width: 100%;
-    height: 12.5px;
-    cursor: pointer;
-  }
-  .form-range[type=range]::-moz-range-thumb {
-    width: 21px;
-    height: 20px;
-    background: #5eae9c;
-    border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 26px;
-    cursor: pointer;
-  }
-  .form-range[type=range]::-ms-track {
-    background: transparent;
-    border-color: transparent;
-    border-width: 6.45px 0;
-    color: transparent;
-    width: 100%;
-    height: 12.5px;
-    cursor: pointer;
-  }
-  .form-range[type=range]::-ms-fill-lower {
-    background: #a8ccc9;
-    border: 0;
-    border-radius: 50px;
-  }
-  .form-range[type=range]::-ms-fill-upper {
-    background: rgba(184, 213, 211, 0.5);
-    border: 0;
-    border-radius: 50px;
-  }
-  .form-range[type=range]::-ms-thumb {
-    width: 21px;
-    height: 20px;
-    background: #5eae9c;
-    border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 26px;
-    cursor: pointer;
-    margin-top: 0px;
-    /*Needed to keep the Edge thumb centred*/
-  }
-  .form-range[type=range]:focus::-ms-fill-lower {
-    background: rgba(184, 213, 211, 0.5);
-  }
-  .form-range[type=range]:focus::-ms-fill-upper {
-    background: #c8dedd;
-  }
+}
