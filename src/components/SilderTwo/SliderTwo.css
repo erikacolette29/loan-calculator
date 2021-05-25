@@ -8,37 +8,68 @@
  align-items: center;
   } 
   
-  .buble{
+  .buble2{
     margin: 1rem 1rem 0;
    color: #5eae9c;
    font-size: 1.5rem;
+  }
+  .interest-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
   }
   .interest-box{
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
+  .buble2-box{
+    display: flex;
+    align-items:flex-start;
+
+  }
+  .label3 {
+    font-size: 1.6rem;
+    color: rgb(224, 134, 118);
+    margin-bottom: 10px;
+  }
+  .current-rates {
+    color: rgb(224, 134, 118);
+    text-decoration: none;
+    font-size: 0.7rem;
+  }
+  .current-rates:visited {
+    color: rgb(224, 134, 118);
+  }
 
   @media only screen and (min-width: 480px) and (max-width: 1300px) {
-    .buble{
-      margin: 0 2rem ;
+    .buble2{
+      margin: 0 !important ;
       font-size: 2rem !important;
     
      }
      .form-range{
       width: 100% !important;
     }
+    .current-rates{
+      font-size: 1rem ;
+    }
   }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
    
-    .buble{
-      margin: 0 2rem ;
+    .buble2{
+      margin: 0 !important;
       font-size: 1rem !important;
     
      }
 
      .form-range{
        width: 100% !important;
+     }
+     .current-rates{
+      font-size: 0.6rem;
      }
 
   }

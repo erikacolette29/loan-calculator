@@ -15,9 +15,9 @@ export default function SliderOne({ sliderThree, setSliderThree, values, setNumM
   
     return (
       <>
-      <div className="loan-amount-box">
+      <div className="num-months-box">
       <label className="label">Number Of Months</label>
-      <div className="buble" > 
+      <div className="buble3" > 
         {sliderThree}
         </div>
         </div>

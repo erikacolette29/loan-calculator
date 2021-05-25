@@ -42,16 +42,8 @@
   display: flex;
   justify-content:center;
   flex-flow: column wrap;
+}
 
-}
-.current-rates {
-  color: rgb(224, 134, 118);
-  text-decoration: none;
-  font-size: 0.8rem;
-}
-.current-rates:visited {
-  color: rgb(224, 134, 118);
-}
 
 @media only screen and (min-width: 480px) and (max-width: 1300px) {
   .body-container {

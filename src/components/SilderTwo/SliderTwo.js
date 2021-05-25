@@ -15,13 +15,19 @@ export default function SliderOne({ sliderTwo, setSliderTwo, values, setInterest
   
     return (
       <>
+      <div className="interest-container">
+
       <div className="interest-box">
       <label className="label">Interest Rate</label>
-    
-      <div className="buble" > 
+      </div>
+
+      <div className="buble2-box">
+      <div className="buble2" > 
         {sliderTwo}%
         </div>
-        <label className="label">
+        </div>
+
+        <label className="label3">
                   <a
                     className="current-rates"
                     target="_blank"
@@ -31,7 +37,10 @@ export default function SliderOne({ sliderTwo, setSliderTwo, values, setInterest
                     Current Rates
                   </a>
                 </label>
-        </div>
+    </div>
+
+
+
       <div className="slider-parent">
         <input className="form-range" type="range" min="0" max="10" step="0.25" value={sliderTwo}
            onChange={({ target: { value: radius } }) => {
