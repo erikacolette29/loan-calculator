@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <>
       <div className="nav">
-        <img className="logo" src="images/fig.png" />
+        <img className="logo" src="" />
       </div>
     </>
   );
