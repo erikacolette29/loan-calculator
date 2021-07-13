@@ -5,11 +5,11 @@ This project was to create a brand focused loan calculator. Mobile first design.
 Website: https://loan-calculator-et.netlify.app/
 
 
-### Wireframe
+## Wireframe
 
 ![wireframe](public/images/wireframes.png)
 
-### Technologies
+## Technologies
 
 * React.js
 * Javascript
